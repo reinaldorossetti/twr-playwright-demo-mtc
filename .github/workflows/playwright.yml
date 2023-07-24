@@ -39,3 +39,10 @@ jobs:
         name: test-results
         path: test-results/
         retention-days: 30
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages  # default: gh-pages
+        publish_dir: test-results
+        destination_dir: test-results
