@@ -11,7 +11,7 @@ export default defineConfig({
   reporter: 'html',
   use: {
     baseURL: 'https://www.saucedemo.com/',
-    trace: 'on',
+    trace: 'on-first-retry',
     storageState: 'storageState.json',
     testIdAttribute: 'data-test'
   },
