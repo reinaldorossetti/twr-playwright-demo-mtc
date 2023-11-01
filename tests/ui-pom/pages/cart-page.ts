@@ -1,9 +1,11 @@
 import { type Page, type Locator , expect } from '@playwright/test';
 
 class CartPage {
-  
-  constructor(readonly page: Page, readonly removeFromCartButton: Locator, 
-              readonly checkoutButton: Locator) {
+  readonly page: Page;
+  readonly removeFromCartButton: Locator;
+  readonly checkoutButton: Locator;
+
+  constructor(page: Page) {
     this.page = page;
     this.removeFromCartButton = page.getByRole('button', { name: 'Remove' });
     this.checkoutButton = page.getByRole('button', { name: 'Checkout' });
