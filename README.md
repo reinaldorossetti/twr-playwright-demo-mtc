@@ -59,6 +59,8 @@ All the commands are in the [package.json](package.json).
 ## 📊 Report
 
 `npx playwright show-report`
+[Report in GitActions](https://reinaldorossetti.github.io/twr-playwright-demo-mtc/playwright-report/index.html)
+
 ## 🌀 Pipeline
 
 Using GitHub Actions.
