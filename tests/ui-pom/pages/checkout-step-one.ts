@@ -36,7 +36,7 @@ class CheckoutStepOnePage {
   }
 
   async fillInformationAndContinue(userData: UserData) {
-    let { firstName, lastName, zip } = userData;
+    const { firstName, lastName, zip } = userData;
     for (const input of await this.inputFields.all()){
       await expect(input).toBeEmpty();
   }
